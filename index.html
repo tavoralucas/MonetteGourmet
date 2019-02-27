@@ -4,37 +4,149 @@
     <title>Monette Gourmet</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <!--banner-->
 	<section id="banner">
-        <img src="monette_logo.jpg" alt="Monette Gourmet" id="banner_logo" style="position: relative; display: flex; margin: 0 auto 0 auto; width: 40%;">
-        <h3 style="display: flex; justify-content: center; position: relative; margin-top: -5%; font-weight: 100; font-size: 40px; font-family: 'Fira Sans', sans-serif;"> 
+        <img src="images/monette_logo.jpg" alt="Monette Gourmet" id="banner_logo" style="position: relative;
+        display: flex; margin: 0 auto 0 auto; width: 40%;">
+        <h3 style="display: flex; justify-content: center; 
+        position: relative; margin-top: -5%; font-weight: 100; font-size: 40px; 
+        font-family: 'Fira Sans', sans-serif;"> 
             Adoçando suas memórias</h3>
     </section>
-       
-    <!--BOLOS-->
+    
+    <!--BOLOS-->                
     <section id="bolos">
-        <h3 id="titulo_bolos" style="display: flex; position: relative; justify-content: center; font-weight: lighter; font-family: 'Fira Sans', sans-serif; font-size: 25px;">Bolos</h3>
-        <div class="flex-container">
-            <div>Massas</div>
-            <div>Brigadeiros</div>
-            <div>Coberturas</div>
+        <h3 id="titulo_bolos" style="display: flex; position: relative; 
+        justify-content: center; font-weight: lighter; 
+        font-family: 'Fira Sans', sans-serif; font-size: 50px; margin-bottom:5%;">
+        Bolos</h3>
+
+        <!--CARROSEL DOS BOLOS-->
+        <div class= "container" style="margin-bottom:5%;"> <!--Colocar essa parte dinamica no django-->
+            <div class="car">
+                <div><img src="images/bolos/monette1.jpg"></div>
+                <div><img src="images/bolos/monette7.jpg"></div>
+                <div><img src="images/bolos/monette3.jpg"></div>
+                <div><img src="images/bolos/monette4.jpeg"></div>
+                <div><img src="images/bolos/monette5.jpeg"></div>
+                <div><img src="images/bolos/monette6.jpeg"></div>
+            </div>
         </div>
-        <style>
-            .flex-container{
-                display: flex;
-            }
-            .flex-container > div{
-                margin-left: 15%;
-                margin-right: 15%;
-                font-size: 20px;
-                flex-direction: row;
-                
-            }
-            
-        </style>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.car').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+            });
+            });
+        </script>
     </section>
+    
+    <!--BRIGADEIROS-->              
+    <section id="brigadeiros">
+        <h3 id="titulo_brigadeiros" style="display: flex; position: relative; 
+        justify-content: center; font-weight: lighter; 
+        font-family: 'Fira Sans', sans-serif; font-size: 50px; margin-bottom:5%;">
+        Brigadeiros</h3>
+
+        <!--CARROSEL DOS BRIGADEIROS-->
+        <div class= "container" style="margin-bottom:5%;"> <!--Colocar essa parte dinamica no django-->
+            <div class="carBrigadeiros">
+                <div><img src="images/brigadeiros/briga1.jpeg"></div>
+                <div><img src="images/brigadeiros/briga2.jpeg"></div>
+                <div><img src="images/brigadeiros/briga3.jpeg"></div>
+                <div><img src="images/brigadeiros/briga4.jpeg"></div>
+                <div><img src="images/brigadeiros/briga5.jpg"></div>
+                <div><img src="images/brigadeiros/briga6.jpg"></div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.carBrigadeiros').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+            });
+            });
+        </script>
+    </section>
+
+    <!--CONTATO-->
+		<section id="contact-section">
+			<h3 style="style= position: relative; 
+        justify-content: center; font-weight: lighter; 
+        font-family: 'Fira Sans', sans-serif; font-size: 50px; margin-bottom:5%; display:flex;">Contato</h3>	
+			<form method='POST'> <!--{% csrf_token %} -->
+				<div id="get-data">
+					<div class="green-side">
+						<label>Nome:</label>
+						<input type="text" name="firstname" placeholder="Digite seu nome" required>
+					</div>
+					<div class="green-side">
+						<label>Sobrenome:</label>
+						<input type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+					</div>
+					<div class="green-side">
+						<label>Telefone:</label>
+						<input type="tel" name="usrtel" placeholder="(99) 99999-9999" id="phonemask" required>
+					</div>
+					<div class="green-side">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="Digite seu email" required>
+					</div>
+				</div>
+				<div id="send-data">
+					<div id = "contact-select">
+						<select name="service" required class="border-box-contact">
+							<option value="" disabled selected>Contato</option>
+							<!--{% for servico in servicos %}
+								<option>
+									{{servico.servico}}
+								</option> 
+								
+							{% endfor %}-->
+                            <option>Outros</option>
+						</select>
+						<select name="meet" required class="border-box-contact">
+							<option value="" disabled selected>Como conheceu?</option>
+							<option value="option2">Instagram</option>
+							<option value="option3">Indicação</option>
+						</select>
+					</div>
+					<input type="text" name="subject" class="border-box-contact" id="contact-subject" placeholder="Assunto" required>
+					<textarea name="message" id="message-contact" placeholder="Mensagem..." required></textarea>
+					<button>Enviar</button>
+				</div>
+			</form>
+		</section>
+
+<!--RODAPÉ-->
+		<footer>
+			<hr id="footer-line">
+			<div>
+            </div>
+				
+		</footer>
 </body>
 </html>
