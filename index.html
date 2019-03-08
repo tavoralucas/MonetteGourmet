@@ -16,7 +16,7 @@
     <!--BANNER-->
         <section id="banner">
             <img src="images/monette_logo.jpg" alt="Monette Gourmet" id="banner_logo" style="position: relative;
-            display: flex; margin: 0 auto 0 auto; width: 40%;">
+            display: flex; margin: 0 auto 0 auto; width: 40%; @media">
             <h3 style="display: flex; justify-content: center; 
             position: relative; margin-top: -5%;margin-bottom: 10%; font-weight: 100; font-size: 40px; 
             font-family: 'Fira Sans', sans-serif;"> 
@@ -54,6 +54,22 @@
                         slidesToScroll: 3,
                         autoplay: true,
                         autoplaySpeed: 3000,
+                        responsive: [
+                            {
+                                breakpoint: 1200,
+                                settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                                }
+                            },
+                            {
+                                breakpoint: 900,
+                                settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                                }
+                            }
+                            ]
                 });
                 });
             </script>
@@ -142,12 +158,9 @@
                 <option>Chocolate Belga de Laranja</option>
 
             </select>
-
-
-            <br> <!--COLOCAR A IMAGEM PRA CIMA DO PRECO-->
             
-            <p><span style="display:flex; position:relative; justify-content:center; margin-top: 5%; margin-bottom:0%; 
-            font-weight: bolder; font-size: 15px;" id="valor" class="valor"></span></p>             
+            <p><span style="display:block; position:relative; justify-content:center; margin-top: 5%; margin-bottom:0%;
+            margin-left:40%; font-weight: bolder; font-size: 15px;" id="valor" class="valor"></span></p>             
             
             <section id="contact-section">    
                 <form method='POST'> <!--{% csrf_token %} -->
@@ -196,6 +209,22 @@
                         slidesToScroll: 3,
                         autoplay: true,
                         autoplaySpeed: 3000,
+                        responsive: [
+                            {
+                                breakpoint: 1200,
+                                settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                                }
+                            },
+                            {
+                                breakpoint: 900,
+                                settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                                }
+                            }
+                            ]
                 });
                 });
             </script>
