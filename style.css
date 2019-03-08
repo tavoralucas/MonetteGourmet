@@ -1,3 +1,110 @@
+/*---------------- INICIO DO BANNER --------------------*/
+#banner_logo{
+	position: relative;
+	display: flex; 
+	margin: 0 auto 0 auto; 
+	width: 40%;
+}
+
+#banner > h3 {
+	display: flex; 
+	justify-content: center; 
+	position: relative; 
+	margin-top: -5%;
+	margin-bottom: 10%; 
+	font-weight: 100; 
+	font-size: 40px; 
+    font-family: 'Fira Sans', sans-serif;
+}
+/*---------------- FIM DO BANNER --------------------*/
+
+/*---------------- INICIO DO BOLOS --------------------*/
+
+#bolos > h3{
+	display: flex; 
+	position: relative; 
+	justify-content: center;
+	font-weight: lighter; 
+	font-family: 'Fira Sans', sans-serif; 
+	font-size: 50px; 
+	margin-bottom:2%;
+}
+
+.container {
+	margin-bottom: 5%;
+}
+/*---------------- FIM DO BOLOS --------------------*/
+
+/*---------------- INICIO DO MONTE SEU BOLO --------------------*/
+
+#monte_seu_bolo > h3{
+	display: flex; 
+	position: relative; 
+	justify-content: center; 
+	font-weight: lighter; 
+	font-family: 'Fira Sans', sans-serif; 
+	font-size: 50px; 
+	margin-bottom:5%;
+}
+
+#monte_seu_bolo > p > span{
+	display:block; 
+	position:relative; 
+	justify-content:center; 
+	margin-top: 5%; 
+	margin-bottom:0%;
+	margin-left:40%; 
+	font-weight: bolder; 
+	font-size: 15px;
+}
+
+/*---------------- FIM DO MONTE SEU BOLO --------------------*/
+
+
+
+
+/*---------------- INICIO DE BRIGADEIROS --------------------*/
+#brigadeiros > h3{
+	display: flex; 
+	position: relative; 
+	justify-content: center; 
+	font-weight: lighter; 
+	font-family: 'Fira Sans', sans-serif; 
+	font-size: 50px; 
+	margin-bottom:5%;
+}
+
+/*---------------- FIM DE BRIGADEIROS --------------------*/
+
+/*---------------- INICIO DE CARDAPIO --------------------*/
+#cardapio{
+	background-color: rgb(254,234,223); 
+	justify-content:center;
+}
+
+#cardapio > h2 {
+	display: flex; 
+	position: relative; 
+	justify-content: center; 
+	font-weight: lighter; 
+	font-family: 'Fira Sans', sans-serif; 
+	font-size: 50px; 
+	margin-bottom:2%; 
+	background-color: rgb(254,234,223);
+}
+
+#cardapio > img{
+	display:flex; 
+	position:relative; 
+	justify-content:center; 
+	background-color: rgb(254,234,223); 
+	margin:0 auto 0 auto;
+}
+
+/*---------------- FIM DE CARDAPIO --------------------*/
+
+
+/*---------------- INICIO DO CONTATO --------------------*/
 #contact-section{
 	position: relative;
 	width: 100%;
@@ -134,7 +241,6 @@
 	}
 }
 
-
 @media(max-width: 900px){
 	#contact-section > h2{
 		left: 50%;
@@ -247,3 +353,32 @@
 		width: 275px;
 	}
 }
+/*---------------- FIM DO CONTATO --------------------*/
+
+
+/*---------------- INICIO DO RODAPE --------------------*/
+#rodape > #click{
+	display:flex; 
+	position: relative; 
+	height: 10%;
+}
+
+#icon_w{
+	width:10%; margin-left:65%;
+}
+
+#icon_i{
+	width:10%; margin-left:85%;
+}
+
+#title_rodape{
+	display:flex;
+	position:relative; 
+	justify-content: center; 
+	font-weight:300; 
+	font-size:15px; 
+	margin-top: -3%; 
+	font-family:'Fira Sans', sans-serif;
+}
+
+/*---------------- FIM DO RODAPE --------------------*/

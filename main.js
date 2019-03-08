@@ -1,4 +1,56 @@
-$('#service').on('change', function() {var value = $(this).children('option:selected').val()
+$(document).ready(function(){
+    $('.car').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+});
+});
+
+$(document).ready(function(){
+    $('.carBrigadeiros').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+});
+});
+
+$('.border-box-contact').on('change', function() {var value = $(this).children('option:selected').val()
     if (value == 1) {
         $('#valor').html('<img src="http://confeitando.com.br/wp-content/uploads/2016/12/naked_cake_frutas_vermelhas_trufado_confeitandoblog_um_ano.jpg" style="display:flex; position:relative; justify-content: center; width:30%; height:30%;"/>Preço: R$ 70,00')
     } else if (value == 2) {
