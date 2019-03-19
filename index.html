@@ -13,9 +13,14 @@
 </head>
 
 <body>
+    <!--HEADER-->
+    <header>
+
+    </header>
     <!--BANNER-->
         <section id="banner">
-            <img src="images/monette_logo.jpg" alt="Monette Gourmet" id="banner_logo">
+            <img src="images/monette_logo.jpg" 
+            alt="Monette Gourmet" id="banner_logo">
             <h3>Adoçando suas memórias</h3>
         </section>
     
@@ -26,7 +31,7 @@
             <!--CARROSEL DOS BOLOS-->
             <div class= "container"> <!--Colocar essa parte dinamica no django-->
                 <div class="car">
-                    <div><img src="images/bolos/monette1.jpg"></div>
+                    <div class="image-container"><img src="images/bolos/monette1.jpg"></div>
                     <div><img src="images/bolos/monette7.jpg"></div>
                     <div><img src="images/bolos/monette3.jpg"></div>
                     <div><img src="images/bolos/monette4.jpeg"></div>
@@ -45,7 +50,7 @@
             <h3>Monte seu bolo</h3>  
             
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <select style="margin: 0 5% 0 13%;" name="service" required class="border-box-contact">
+            <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
                 <option value="" disabled selected>Tamanho</option>
                 <option value=1>PP (~1,2kg)</option>
                 <option value=2>P (~1,8kg)</option>
@@ -164,7 +169,7 @@
     <!--CARDAPIO DOS BRIGADEIROS-->
         <section  id="cardapio">
             <h2>Cardápio de Brigadeiros</h2>
-            <img src="images/cardapioBrigadeiro.png">            
+            <img src="images/cardapioBrigadeiroteste.png">           
         </section>
 
     <!--CONTATO-->
@@ -221,21 +226,18 @@
     <!--RODAPÉ-->
 		<footer id="rodape">
 			<hr id="footer-line">
-			<div id="click">
-                <a href="https://api.whatsapp.com/send?phone=5581994672605" target="_blank">
-                    <img src="images/whatsapp-logo.png" id="icon_w">
-                </a> 
-                <a href="https://www.instagram.com/monettegourmet/" target="_blank">
-                    <img src="images/instagram.png" id= "icon_i">
-                </a>
-            </div>
-
             <div >
-            <h3  id="title_rodape"> Rua General Americano Freire, 561 - Boa viagem - Recife/PE</h3>
+                <h3  id="title_rodape"> Rua General Americano Freire, 561 - Boa viagem - Recife/PE</h3>
             </div>
-
 		</footer>
-
+    <!--DIREITOS-->
+        <section id="makeaby">
+            <div id="direitos">
+                <span>© 2019 - <a href="https://www.instagram.com/tavoralucas/">
+                    <span> Lucas Távora</span>
+                </a>- Todos os direitos reservados</span>
+            </div>
+        </section>
         <script src="main.js"></script>
 </body>
 </html>
