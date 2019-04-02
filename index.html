@@ -9,14 +9,52 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="icon" href="images/icon.jpeg">
+    <link rel="icon" href="images/Brigadeiro.png">
 </head>
 
 <body>
     <!--HEADER-->
-    <header>
+        <header>
 
-    </header>
+			<img src="images/Brigadeiro.png" alt="Monette Gourmet" id="header-logo">
+
+			<div id="header-links-1">
+				<a href="#banner" data-secname="banner" class="smoothscroll">Home</a>
+				<a style="margin-left:13%;" href="#bolos" data-secname="bolos" class="smoothscroll">Bolos</a>
+                <a style="margin-left:13%;" href="#monte_seu_bolo" data-secname="monte_seu_bolo" class="smoothscroll">Monte</a>
+				<a style="margin-left:13%;" href="#brigadeiros" data-secname="brigadeiros" class="smoothscroll">Brigadeiros</a>
+                <a style="margin-left:13%;" href="#cardapio" data-secname="cardapio" class="smoothscroll">Cardápio</a>                                                                       
+				<a style="margin-left:13%;" href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
+			</div>                                                                      
+
+			<div id="header-links-2" style="margin-right:-5%;" >
+				<a href="https://www.instagram.com/monettegourmet/" target="_blank"> <img src="images/instagram.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=+5581994672605&text=Olá%20gostaria%20de%20saber%20mais" target="_blank"> <img src="images/whatsapp-logo.png"></a>
+			</div>
+
+			<img src="images/menu.png" id="burger-header">
+			
+            <div id="burger-menu">
+				<a href="#banner" data-secname="banner" class="smoothscroll">Home</a>
+				<a style="margin-left:13%;" href="#bolos" data-secname="bolos" class="smoothscroll">Bolos</a>
+                <a style="margin-left:13%;" href="#monte_seu_bolo" data-secname="monte_seu_bolo" class="smoothscroll">Monte</a>
+				<a style="margin-left:13%;" href="#brigadeiros" data-secname="brigadeiros" class="smoothscroll">Brigadeiros</a>
+                <a style="margin-left:13%;" href="#cardapio" data-secname="cardapio" class="smoothscroll">Cardápio</a>                                                                       
+				<a style="margin-left:13%;" href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
+				<hr>
+
+				<div id="header-network">
+					<a href="https://www.instagram.com/monettegourmet/" target="_blank">
+						<img src="images/instagram.png">
+					</a>
+
+                    <a href="https://api.whatsapp.com/send?phone=+5581994672605&text=Olá%20gostaria%20de%20saber%20mais" target="_blank"> 
+                    <img src="images/whatsapp-logo.png"></a>
+				</div>
+
+			</div>
+		</header>
+
     <!--BANNER-->
         <section id="banner">
             <img src="images/monette_logo.jpg" 
@@ -129,7 +167,7 @@
             
             <p><span id="valor" class="valor"></span></p>             
             
-            <section id="contact-section">    
+            <section id="contact-section-whats">    
                 <form method='POST'> <!--{% csrf_token %} -->
                     <div id="get-data" >
                         <div class="green-side" style="margin-top:5%;" >
@@ -139,7 +177,7 @@
                     </div>
                 </form>
             </section>
-
+            <br>
             <div id="send-data" style="margin: -5% auto 0 auto;">
                 <button>Pedir</button>
             <div>
@@ -233,11 +271,16 @@
     <!--DIREITOS-->
         <section id="makeaby">
             <div id="direitos">
-                <span>© 2019 - <a href="https://www.instagram.com/tavoralucas/">
-                    <span> Lucas Távora</span>
+                <span>© 2019 - <a href="https://www.instagram.com/monettegourmet/">
+                    <span> Monette Gourmet</span>
                 </a>- Todos os direitos reservados</span>
             </div>
         </section>
+
+    <!--LUCAS-->
+    <section id="lucas">
+        <a href="https://www.instagram.com/tavoralucas/" target="_blank" ><img src="images/lnt.png" id="logo-lucas" ></a>
+    </section>
         <script src="main.js"></script>
 </body>
 </html>
