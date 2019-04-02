@@ -29,7 +29,8 @@
 
 			<div id="header-links-2" style="margin-right:-5%;" >
 				<a href="https://www.instagram.com/monettegourmet/" target="_blank"> <img src="images/instagram.png"></a>
-                <a href="https://api.whatsapp.com/send?phone=+5581994672605&text=Olá%20gostaria%20de%20saber%20mais" target="_blank"> <img src="images/whatsapp-logo.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=5581994672605&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais!" target="_blank"> 
+                    <img src="images/whatsapp-logo.png"></a>
 			</div>
 
 			<img src="images/menu.png" id="burger-header">
@@ -59,8 +60,24 @@
         <section id="banner">
             <img src="images/monette_logo.jpg" 
             alt="Monette Gourmet" id="banner_logo">
-            <h3>Adoçando suas memórias</h3>
+            <h3 id="text-banner">Adoçando suas memórias</h3>
         </section>
+
+        <script>
+            function typeWrite(elemento){
+                const textArray = elemento.innerHTML.split('');
+                elemento.innerHTML='';
+                textArray.forEach((letra,i) => {
+                    setTimeout(function(){
+                        elemento.innerHTML += letra; 
+                    }, 75 * i)
+                });
+            }
+
+            const title = document.querySelector('#text-banner');
+            typeWrite(title);
+
+        </script>
     
     <!--BOLOS-->                
         <section id="bolos">
@@ -88,98 +105,100 @@
             <h3>Monte seu bolo</h3>  
             
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
-                <option value="" disabled selected>Tamanho</option>
-                <option value=1>PP (~1,2kg)</option>
-                <option value=2>P (~1,8kg)</option>
-                <option value=3>M (~2,5kg)</option>
-                <option value=4>G (~3,5kg)</option>
-            </select>
-            
-            <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
-                <option value="" disabled selected>Sabor da Massa</option>
-                <!--{% for servico in servicos %}
-                    <option>
-                        {{servico.servico}}
-                    </option> 				
-                    {% endfor %}-->
-                <option>Baunilha</option>
-                <option>Chocolate</option>
-                <option>Red Velvet</option>
-            </select>
+            <div style="display:flex; justify-content:center;">
+                <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
+                    <option style="text-align: center;" value="" disabled selected>Tamanho</option>
+                    <option value=1>PP (~1,2kg)</option>
+                    <option value=2>P (~1,8kg)</option>
+                    <option value=3>M (~2,5kg)</option>
+                    <option value=4>G (~3,5kg)</option>
+                </select>
+                
+                <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
+                    <option style="text-align: center;" value="" disabled selected>Sabor da Massa</option>
+                    <!--{% for servico in servicos %}
+                        <option>
+                            {{servico.servico}}
+                        </option> 				
+                        {% endfor %}-->
+                    <option>Baunilha</option>
+                    <option>Chocolate</option>
+                    <option>Red Velvet</option>
+                </select>
 
-            <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
-                <option value="" disabled selected>Recheios</option>
-                <!--{% for servico in servicos %}
-                    <option>
-                        {{servico.servico}}
-                    </option> 				
-                    {% endfor %}-->
-                <option>Chocolate ao Leite</option>
-                <option>Chocolate Branco</option>
-                <option>Leite Ninho</option>
-                <option>Doce de Leite com Queijo</option>
-                <option>Nutella</option>
-                <option>Ovomaltine</option>
-                <option>Prestígio</option>
-                <option>Churros</option>
-                <option>Chocolate de Limão</option>
-                <option>Napolitano</option>
-                <option>Chocolate Meio Amargo</option>
-                <option>Beijinho</option>
-                <option>Capuccino</option>
-                <option>Paçoca</option>
-                <option>Morango Silvestre</option>
-                <option>Oreo</option>
-                <option>Leite Ninho com Nutela</option>
-                <option>Romeu e Julieta</option>
-                <option>Chocolate Belga de Laranja</option>
-            </select>
+                <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
+                    <option style="text-align: center;" value="" disabled selected>Recheios</option>
+                    <!--{% for servico in servicos %}
+                        <option>
+                            {{servico.servico}}
+                        </option> 				
+                        {% endfor %}-->
+                    <option>Chocolate ao Leite</option>
+                    <option>Chocolate Branco</option>
+                    <option>Leite Ninho</option>
+                    <option>Doce de Leite com Queijo</option>
+                    <option>Nutella</option>
+                    <option>Ovomaltine</option>
+                    <option>Prestígio</option>
+                    <option>Churros</option>
+                    <option>Chocolate de Limão</option>
+                    <option>Napolitano</option>
+                    <option>Chocolate Meio Amargo</option>
+                    <option>Beijinho</option>
+                    <option>Capuccino</option>
+                    <option>Paçoca</option>
+                    <option>Morango Silvestre</option>
+                    <option>Oreo</option>
+                    <option>Leite Ninho com Nutela</option>
+                    <option>Romeu e Julieta</option>
+                    <option>Chocolate Belga de Laranja</option>
+                </select>
 
-            <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
-                <option value="" disabled selected>Cobertura</option>
-                <!--{% for servico in servicos %}
-                    <option>
-                        {{servico.servico}}
-                    </option> 				
-                    {% endfor %}-->
-                <option>Chocolate ao Leite</option>
-                <option>Chocolate Branco</option>
-                <option>Leite Ninho</option>
-                <option>Doce de Leite com Queijo</option>
-                <option>Nutella</option>
-                <option>Ovomaltine</option>
-                <option>Prestígio</option>
-                <option>Churros</option>
-                <option>Chocolate de Limão</option>
-                <option>Napolitano</option>
-                <option>Chocolate Meio Amargo</option>
-                <option>Beijinho</option>
-                <option>Capuccino</option>
-                <option>Paçoca</option>
-                <option>Morango Silvestre</option>
-                <option>Oreo</option>
-                <option>Leite Ninho com Nutela</option>
-                <option>Romeu e Julieta</option>
-                <option>Chocolate Belga de Laranja</option>
+                <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
+                    <option style="text-align: center;" value="" disabled selected>Cobertura</option>
+                    <!--{% for servico in servicos %}
+                        <option>
+                            {{servico.servico}}
+                        </option> 				
+                        {% endfor %}-->
+                    <option>Chocolate ao Leite</option>
+                    <option>Chocolate Branco</option>
+                    <option>Leite Ninho</option>
+                    <option>Doce de Leite com Queijo</option>
+                    <option>Nutella</option>
+                    <option>Ovomaltine</option>
+                    <option>Prestígio</option>
+                    <option>Churros</option>
+                    <option>Chocolate de Limão</option>
+                    <option>Napolitano</option>
+                    <option>Chocolate Meio Amargo</option>
+                    <option>Beijinho</option>
+                    <option>Capuccino</option>
+                    <option>Paçoca</option>
+                    <option>Morango Silvestre</option>
+                    <option>Oreo</option>
+                    <option>Leite Ninho com Nutela</option>
+                    <option>Romeu e Julieta</option>
+                    <option>Chocolate Belga de Laranja</option>
 
-            </select>
-            
+                </select>
+            </div>
             <p><span id="valor" class="valor"></span></p>             
             
             <section id="contact-section-whats">    
                 <form method='POST'> <!--{% csrf_token %} -->
                     <div id="get-data" >
                         <div class="green-side" style="margin-top:5%;" >
-                            <label style="margin: 0 auto 0 auto;">Whatsapp:</label>
+                            <label style="margin: 0 auto 0 auto;">Deixe seu Whatsapp:</label>
                             <input  style="margin: 2% auto 0 auto;" type="tel" name="usrtel" placeholder="(99) 99999-9999"  id="phonemask" required>
                         </div>
                     </div>
                 </form>
             </section>
-            <br>
+        <br>
+        <br>
             <div id="send-data" style="margin: -5% auto 0 auto;">
-                <button>Pedir</button>
+                <button type="button" class="efeito">Pedir</button>
             <div>
         </section>
 
@@ -212,7 +231,7 @@
 
     <!--CONTATO-->
 		<section id="contact-section">
-			<h3 style="style= position: relative; 
+			<h3 style="position: relative"; 
             justify-content: center; font-weight: lighter; 
             font-family: 'Fira Sans', sans-serif; font-size: 50px; margin-bottom:3%; display:flex;">Contato</h3>	
 			<form method='POST'> <!--{% csrf_token %} -->
@@ -278,9 +297,11 @@
         </section>
 
     <!--LUCAS-->
-    <section id="lucas">
-        <a href="https://www.instagram.com/tavoralucas/" target="_blank" ><img src="images/lnt.png" id="logo-lucas" ></a>
-    </section>
-        <script src="main.js"></script>
+        <section id="lucas">
+            <a href="https://www.instagram.com/tavoralucas/" target="_blank" >
+                <img src="images/lnt.png" id="lucas-image"></a>
+        </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
