@@ -16,7 +16,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 920,
                 settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -42,7 +42,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 920,
                 settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -202,7 +202,7 @@ $(window).click(function(e){ // recolher hambúrguer 2
 $(window).scroll(function(){ //header aparecendo
     var headerHeight;
     if($(window).width() > 900){
-        headerHeight = 575;
+        headerHeight = 585;
     }
     if($(window).width() <= 900 && $(window).width() > 600){
         headerHeight = 460;

@@ -19,12 +19,12 @@
 			<img src="images/Brigadeiro.png" alt="Monette Gourmet" id="header-logo">
 
 			<div id="header-links-1">
-				<a href="#banner" data-secname="banner" class="smoothscroll">Home</a>
-				<a style="margin-left:13%;" href="#bolos" data-secname="bolos" class="smoothscroll">Bolos</a>
-                <a style="margin-left:13%;" href="#monte_seu_bolo" data-secname="monte_seu_bolo" class="smoothscroll">Monte</a>
-				<a style="margin-left:13%;" href="#brigadeiros" data-secname="brigadeiros" class="smoothscroll">Brigadeiros</a>
-                <a style="margin-left:13%;" href="#cardapio" data-secname="cardapio" class="smoothscroll">Cardápio</a>                                                                       
-				<a style="margin-left:13%;" href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
+				<a style="margin-left: 15%;"href="#banner" data-secname="banner" class="smoothscroll">Home</a>
+				<a style="margin-left: 15%;"href="#bolos" data-secname="bolos" class="smoothscroll">Bolos</a>
+                <a style="margin-left: 15%;" href="#monte_seu_bolo" data-secname="monte_seu_bolo" class="smoothscroll">Monte</a>
+				<a style="margin-left: 15%;" href="#brigadeiros" data-secname="brigadeiros" class="smoothscroll">Brigadeiros</a>
+                <a style="margin-left: 15%;" href="#cardapio" data-secname="cardapio" class="smoothscroll">Cardápio</a>                                                                       
+				<a style="margin-left: 15%;" href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
 			</div>                                                                      
 
 			<div id="header-links-2" style="margin-right:-5%;" >
@@ -36,17 +36,17 @@
 			<img src="images/menu.png" id="burger-header">
 			
             <div id="burger-menu">
-				<a href="#banner" data-secname="banner" class="smoothscroll">Home</a>
-				<a style="margin-left:13%;" href="#bolos" data-secname="bolos" class="smoothscroll">Bolos</a>
-                <a style="margin-left:13%;" href="#monte_seu_bolo" data-secname="monte_seu_bolo" class="smoothscroll">Monte</a>
-				<a style="margin-left:13%;" href="#brigadeiros" data-secname="brigadeiros" class="smoothscroll">Brigadeiros</a>
-                <a style="margin-left:13%;" href="#cardapio" data-secname="cardapio" class="smoothscroll">Cardápio</a>                                                                       
-				<a style="margin-left:13%;" href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
-				<hr>
+				<a style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;" href="#banner" data-secname="banner" class="smoothscroll">Home</a>
+				<a style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;" href="#bolos" data-secname="bolos" class="smoothscroll">Bolos</a>
+                <a style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;"href="#monte_seu_bolo" data-secname="monte_seu_bolo" class="smoothscroll">Monte</a>
+				<a style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;" href="#brigadeiros" data-secname="brigadeiros" class="smoothscroll">Brigadeiros</a>
+                <a style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;" href="#cardapio" data-secname="cardapio" class="smoothscroll">Cardápio</a>                                                                       
+				<a style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;" href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
+				<!--<hr style="margin-top: 25px;">-->
 
-				<div id="header-network">
+				<div id="header-network" style="display:flex; position:relative; justify-content:center; margin: 0 auto 0 auto;">
 					<a href="https://www.instagram.com/monettegourmet/" target="_blank">
-						<img src="images/instagram.png">
+						<img src="images/instagram.png" >
 					</a>
 
                     <a href="https://api.whatsapp.com/send?phone=+5581994672605&text=Olá%20gostaria%20de%20saber%20mais" target="_blank"> 
@@ -105,7 +105,7 @@
             <h3>Monte seu bolo</h3>  
             
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <div style="display:flex; justify-content:center;">
+            <div id="monte-options">
                 <select style="margin: 0 5% 0 5%;" name="service" required class="border-box-contact">
                     <option style="text-align: center;" value="" disabled selected>Tamanho</option>
                     <option value=1>PP (~1,2kg)</option>
@@ -231,8 +231,7 @@
 
     <!--CONTATO-->
 		<section id="contact-section">
-			<h3 style="position: relative"; 
-            justify-content: center; font-weight: lighter; 
+			<h3 style="position: relative;justify-content: center; font-weight: lighter; 
             font-family: 'Fira Sans', sans-serif; font-size: 50px; margin-bottom:3%; display:flex;">Contato</h3>	
 			<form method='POST'> <!--{% csrf_token %} -->
 				<div id="get-data">
@@ -287,6 +286,7 @@
                 <h3  id="title_rodape"> Rua General Americano Freire, 561 - Boa viagem - Recife/PE</h3>
             </div>
 		</footer>
+    
     <!--DIREITOS-->
         <section id="makeaby">
             <div id="direitos">
