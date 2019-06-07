@@ -5,3 +5,6 @@ https://www.instagram.com/monettegourmet/
 
 
 https://monettegourmet.netlify.com/
+
+
+FASE ESTÁTICA
